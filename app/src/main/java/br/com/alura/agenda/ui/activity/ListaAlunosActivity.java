@@ -32,9 +32,9 @@ public class ListaAlunosActivity extends AppCompatActivity {
         setTitle(TITULO_APPBAR_ALUNO);
         configuraFabNovoAluno();
         configuraLista();
+            dao.salva(new Aluno("Maison", "981840807", "maisongalvao144@gmail.com"));
+            dao.salva(new Aluno("Nildes", "98225412", "nildes@gmail.com"));
 
-        dao.salva(new Aluno("Maison", "981840807", "maisongalvao144@gmail.com"));
-        dao.salva(new Aluno("Nildes", "98225412", "nildes@gmail.com"));
     }
 
     @Override
