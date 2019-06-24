@@ -23,18 +23,18 @@ public class AlunoDAO {
         contadorDeIds++;
     }
 
-    public void edita(Aluno aluno){
+    public void edita(Aluno aluno) {
         Aluno alunoEncontrado = buscaAlunoPorId(aluno);
-        if(alunoEncontrado != null){
+        if (alunoEncontrado != null) {
             int posicaoDoAlunoEncontrado = alunos.indexOf(alunoEncontrado);
-            alunos.set(posicaoDoAlunoEncontrado,aluno);
+            alunos.set(posicaoDoAlunoEncontrado, aluno);
         }
     }
 
     @Nullable
     private Aluno buscaAlunoPorId(Aluno aluno) {
-        for (Aluno a:alunos){
-            if(a.getId()==aluno.getId()){
+        for (Aluno a : alunos) {
+            if (a.getId() == aluno.getId()) {
                 return a;
             }
         }
@@ -43,5 +43,13 @@ public class AlunoDAO {
 
     public List<Aluno> todos() {
         return new ArrayList<>(alunos);
+    }
+
+    public void remove(Aluno aluno) {
+        Aluno alunoDevolvido = buscaAlunoPorId(aluno);
+        if (alunoDevolvido != null) {
+            alunos.remove(alunoDevolvido);
+        }
+
     }
 }
