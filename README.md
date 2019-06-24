@@ -11,5 +11,26 @@ A técnica de transferência via extra, exige que o dado seja serializável. Sen
 ``` 
 
 ## Aula02 - Editando aluno pelo Formulário
+* Atributo id para diferenciar os objetos alunos
+* Atributo id como estático e incrementando.
+* Criação dos getters e setters de Aluno.
+* Método hasExtra (Verifica se há algum dado no putExtra).
+* Método parent.getItemAtPosition(position).
+* CTRL + ALT + M (refatorações de métodos).
+* CTRL + ALT + C (Criação de constantes).
+* Isolar as constantes em interfaces que são publicas e final por padrão.
+* setTitle para os diferentes modos (Inserção,Edição).
+* Early return
 
 ## Aula03 - Removendo aluno da lista
+* Uso do onItemLongClick
+* Adapter clear e addAll.
+
+## Aula04 -  Aplicando menus do Android
+* registerForContextMenu.
+* onContextItemSelected para criar o menu.
+
+## Melhorando a experiência do formulário
+* O ScrollView só aceita uma única viewGroup Filha.
+* A rotação da tela destroi e recria a activity novamente.
+* 
